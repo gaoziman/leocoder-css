@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>单位</title>
+    <style>
+        .box1 {
+            width: 100px;
+            height: 100px;
+            background-color: tomato;
+        }
+
+        .box2 {
+            width: 100%;
+            height: 50%;
+            background-color: orange;
+        }
+
+        .box4 {
+            font-size: 70px;
+        }
+
+        .box3 {
+            width: 1em;
+            height: 1em;
+            background: greenyellow;
+        }
+
+        html {
+            font-size: 100px;
+        }
+
+        .box5 {
+            width: 2rem;
+            height: 2rem;
+            background: deepskyblue;
+        }
+    </style>
+</head>
+<body>
+<!--
+    单位：长度单位和颜色单位
+        长度单位：
+            像素（px）：
+                显示器的图形实际上是由一个一个的小点点构成的，
+                    每一个小点就是一个像素
+                每一台设备的像素大小是不同的，越清晰的设备像素就越小
+                当我们面向移动端开发时，会面临一个问题，同样是12px，在pc端里可能正合适
+                    但是在手机中浏览时，就会变得特别的小
+
+            百分比（%）：
+                设置后元素的属性会根据父元素指定属性的百分比计算
+
+            em：
+                1em = 1font-size（当前元素的）
+
+            rem（root em）：
+                1rem = 1根元素的font-size（html根元素）
+
+-->
+<div class="box1">
+    <div class="box2"></div>
+</div>
+<hr>
+
+<div class="box4">
+    <div class="box3"></div>
+</div>
+<hr>
+
+<div class="box5"></div>
+</body>
+</html>

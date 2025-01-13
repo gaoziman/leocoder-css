@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>十六进制的颜色</title>
+    <style>
+        .box1{
+            width: 200px;
+            height: 200px;
+            background-color: #bfa;
+        }
+        /*
+          使用十六进制来表示颜色：
+              十进制 0 1 2 3 4 5 6 7 8 9 10
+              二进制 0 1 10 11 100 101 110 111
+              八进制 0 1 2 3 4 5 6 7 10 11 12 ... 17 20
+              十六进制 0 1 2 3 4 5 6 7 8 9 a b c d e f
+                        10 11 ... 19 1a 1b 1c 1d 1e 1f
+                        20 ... 29 2a 2b 2c 2d 2e 2f 30
+
+              可以通过三个两位的十六进制数字来表示一个颜色
+                语法：#红色绿色蓝色
+                - 每一个颜色的取值范围 00 - ff
+                - 例子：
+                    红色：#ff0000
+                    绿色：#00ff00
+                - 如果rgb值是两两重复的，可以进行简写
+                    #aabbcc -> #abc
+                    #bbffaa -> #bfa
+        */
+
+    </style>
+</head>
+<body>
+<div class="box1"></div>
+</body>
+</html>
