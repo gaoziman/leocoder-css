@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <title>伪元素</title>
+  <style>
+
+    /*
+      通过before、after可以选中元素开始或结束的位置，从而为其添加内容。
+        注意：这里的内容是通过CSS添加的！不算是网页中的正式内容。
+            1.通过它可以为元素添加一些统一的符号
+            2.也可以在特殊场景下通过它们来调整一下页面的样式
+     */
+    div::before{
+      content: "before";
+      color: red;
+    }
+
+    div::after{
+      content: "after";
+      color: red;
+    }
+
+    section::before{
+      content: ">";
+    }
+
+    p::first-letter{
+      font-size: 30px;
+    }
+
+    p::first-line{
+      background: orange;
+    }
+
+    p::selection{
+      background-color: yellow;
+    }
+
+  </style>
+</head>
+<body>
+<!--
+    伪元素
+      - 伪元素表示的是页面中特殊的位置
+      - 伪元素使用::开头
+      ::before
+        - 元素的开始位置（开始标签之后）
+      ::after
+        - 元素的结束位置（结束标签之前）
+      ::first-letter
+        - 首字母
+      ::first-line
+        - 第一行
+      ::selection
+        - 选中的文字的样式
+-->
+<div>我是一个div</div>
+<hr>
+<section>第一项</section>
+<section>第二项</section>
+<section>第三项</section>
+<section>第四项</section>
+<section>第五项</section>
+
+<hr>
+
+<p>
+  那年冬天，祖母死了，父亲的差使也交卸了，正是祸不单行的日子。我从北京到徐州，打算跟着父亲奔丧回家。到徐州见着父亲，看见满院狼藉的东西，又想起祖母，不禁簌簌地流下眼泪。父亲说：“事已如此，不必难过，好在天无绝人之路！”
+</p>
+
+<p>
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa cum dolore natus non nulla sapiente. Cupiditate deserunt ducimus eius labore, obcaecati officiis totam voluptates! A aspernatur distinctio minima quis suscipit.
+</p>
+</body>
+</html>

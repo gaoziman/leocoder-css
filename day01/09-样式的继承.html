@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <title>样式的继承</title>
+  <style>
+    div{
+      color: red;
+      background-color: yellow;
+    }
+  </style>
+</head>
+<body>
+<!--
+  样式的继承
+    - 设置给祖先元素的样式，也会同时应用到其后代元素上
+    - 继承的存在大大的简化了样式的编写，
+        但并不是所有的样式都会发生继承！
+        所有的布局、背景、边框等相关的样式都不会发生继承
+-->
+
+<div>
+  我是一个div
+  <p>我是div中的p元素 <span>我是span</span> </p>
+</div>
+
+</body>
+</html>

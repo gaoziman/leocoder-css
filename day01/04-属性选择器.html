@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <title>属性选择器</title>
+  <style>
+    /*
+        属性选择器
+            - 用来根据元素的属性来选中元素
+            - 语法：
+                [属性名] 选中具有该属性的元素
+                [属性名=属性值] 选中指定属性值的元素
+                [属性名^=属性值] 选中属性值以指定内容开头的元素
+                [属性名$=属性值] 选中属性值以指定内容结尾的元素
+                [属性名*=属性值] 选中属性值包含指定内容的元素
+
+    */
+
+    /*[title]{
+        color:orange;
+    }*/
+
+    /*[title=hello]{
+        color: red;
+    }*/
+
+    /*[title^=he]{
+        color: red;
+    }*/
+
+    /*[title$=lo]{
+        color: red;
+    }*/
+
+    /*[title*=a]{
+        color: red;
+    }*/
+
+    /*
+        选中title属性等于hello的div
+
+        div{}
+        [title=hello]{}
+
+        可以将多个选择器连着一起写，这样则要求元素必须同时满足多个选择器
+
+        交集选择器
+            - 作用：选中同时符合多个选择器元素
+            - 语法：选择器1选择器2选择器3{}
+            - 例子：
+                div[title=hello]{}
+                div.box{}
+
+        作业：
+            https://flukeout.github.io/
+    */
+    div[title=hello]{
+      color: red;
+    }
+
+
+
+  </style>
+</head>
+<body>
+
+<h1 title="hello">落霞与孤鹜齐飞</h1>
+<p title="abcllo">秋水共长天一色</p>
+<p title="helloabc">先天下之忧而忧，后天下之乐而乐</p>
+<div title="hello">大金链子小金表，一天三顿小烧烤</div>
+<div>大金链子小金表，一天三顿小烧烤</div>
+
+</body>
+</html>
