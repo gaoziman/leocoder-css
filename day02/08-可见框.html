@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <title>可见框</title>
+  <style>
+
+    .box1{
+      box-sizing: border-box;
+      width: 300px;
+      height: 300px;
+      padding: 20px;
+      background-color: #bfa;
+      border: 10px red solid;
+      /*
+          盒子的可见框指可见的部分，大小由内容区、内边距、边框共同决定
+
+          box-sizing 用来指定盒子可见框的计算方式
+              可选值：
+                  content-box 默认值，width和height用来设置内容区的大小
+                  border-box 设置该值后，width和height用来设置盒子可见框的大小
+      */
+    }
+  </style>
+</head>
+<body>
+<div class="box1"></div>
+</body>
+</html>

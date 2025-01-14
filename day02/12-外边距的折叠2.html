@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>外边距</title>
+    <style>
+        /*
+            外边距的折叠
+                - 垂直方向的相邻外边距会发生外边距折叠的现象
+                    兄弟元素间外边距会取较大值（这样设计是为了避免两个元素之间的距离）
+                    父子元素间子元素外边距会传递给父元素，这样会导致布局出问题，需要避免该问题
+         */
+        .box1 {
+            width: 200px;
+            margin-bottom: 20px;
+            background-color: lightblue;
+            height: 100px;
+        }
+
+        .box2 {
+            width: 200px;
+            margin-top: 30px;
+            background-color: lightgreen;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+<div class="box1"></div>
+<div class="box2"></div>
+</body>
+</html>

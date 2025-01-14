@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>margin: 0 auto 原理</title>
+    <style>
+        .container {
+            width: 800px;
+            height: 400px;
+            background-color: lightgray;
+            margin: 0 auto; /* 父容器居中 */
+        }
+        .box {
+            width: 400px;
+            height: 200px;
+            background-color: skyblue;
+            margin: 0 auto; /* 子元素水平居中 */
+        }
+        .box3 {
+            width: 300px;
+            height: 200px;
+            background-color: skyblue;
+            margin: auto; /* 子元素水平居中 */
+        }
+        span {
+            width: 200px;
+            height: 100px;
+            display: block; /* 或 inline-block */
+            margin: 0 auto;
+            /*text-align: center;*/
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="box">居中的盒子</div>
+</div>
+<hr>
+<span>hello leocoder</span>
+<hr>
+<div class="box3"></div>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>盒子模型</title>
+    <style>
+        .box {
+            width: 200px;
+            height: 100px;
+            padding: 20px;
+            border: 5px solid blue;
+            margin: 10px;
+            background-color: lightgray;
+            box-sizing: border-box; /* 或 border-box */
+        }
+        .box1 {
+            width: 200px; /*设置内容区的宽度*/
+            height: 200px; /*设置内容区的高度*/
+            background-color: #bfa;
+
+            /*
+              设置边框：
+                - 要设置边框，涉及到三个样式
+                   border-width 边框的宽度
+                   border-color 边框的颜色
+                   border-style 边框的样式
+            */
+            /*border-width: 10px;*/
+            /*border-color: red;*/
+            /*border-style: solid;*/
+
+            /**
+                可以简写为：border: 10px blue solid
+             */
+
+            border: 2px skyblue solid;
+            /*box-sizing: border-box;*/
+
+        }
+    </style>
+</head>
+<body>
+<!--
+  盒子模型（box model）
+    - 网页的布局指就是将元素摆放到网页的不同的位置
+    - 布局就得先确定元素的大小
+    - 在网页中每一个元素都是一个矩形，或者可以直接将其想象为是一个盒子，
+        每一个盒子，都由以下几个部分组成：
+            - 内容区（content）
+                - 内容区在元素最内部，用来容纳子元素
+                - 内容区的大小由width和height设置
+            - 内边距（padding）
+                - 内容区和边框之间的距离称为内边距
+            - 边框（border）
+                - 边框是盒子边界，离开边框就属于盒子的外部了
+                - 边框会影响到盒子可见框的大小
+            - 外边距（margin）
+                - 盒子与盒子之间的距离称为外边距
+                - 外边距不会影响盒子的大小，但是它会影响盒子的位置（实际大小）
+-->
+<div class="box">
+     i am a box
+</div>
+
+
+</body>
+</html>

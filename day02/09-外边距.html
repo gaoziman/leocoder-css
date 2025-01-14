@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <title>外边距</title>
+  <style>
+    .box1{
+      width: 200px;
+      height: 200px;
+      background-color: tomato;
+      /*
+          外边距同样有四个方向
+              margin-top 上外边距，值越大元素越靠下
+              margin-bottom
+              margin-left 左外边距，值越大元素越靠右
+              margin-right
+              - 由于我们的浏览器默认是按照自左向右，自上向下的顺序来排列元素的，
+                  所以当我们设置上和左外边距时，是改变元素自身的位置
+                  但是设置下和右时，会改变其他元素的位置
+      */
+      /*margin-top: 100px;*/
+      /*margin-left: 100px;*/
+      /*margin-bottom: 100px;*/
+
+      /*margin: 10px 20px 30px 40px;*/
+
+      margin: 0 auto;
+    }
+
+    .box2{
+      width: 200px;
+      height: 200px;
+      background-color: rgba(187, 255, 170, .5);
+      margin: 0 auto;
+    }
+  </style>
+</head>
+<body>
+<div class="box1"></div>
+<div class="box2"></div>
+</body>
+</html>

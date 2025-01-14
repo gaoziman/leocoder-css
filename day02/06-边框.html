@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>边框</title>
+    <style>
+        /*
+               border-width 用来指定边框的宽度
+                   10px 20px 30px 40px 上 右 下 左
+                   10px 20px 30px 上 左右 下
+                   10px 20px 上下 左右
+                   10px  上下左右
+
+                除了border-width以外，
+                   也可以通过border-xxx-width来分别设置某个边框的宽度
+                   xxx可以是top right bottom left
+           */
+        /*border-width: 10px;*/
+        /*border-left-width: 10px;*/
+        /*border-color: red;*/
+        /*
+            边框的样式：
+                solid 实线
+                dotted 点状虚线
+                dashed 虚线
+                double 双线
+
+        */
+        /*border-style: solid dotted dashed double;*/
+
+        /*
+            border 简写属性，可以同时设置边框的三个样式
+
+            border-xxx 简写属性
+            border-top
+            border-bottom
+            border-left
+            border-right
+        */
+        .box1 {
+            width: 200px;
+            height: 200px;
+            background-color: #bfa;
+
+            border: solid red 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="box1">
+    i am a box
+</div>
+
+
+</body>
+</html>
