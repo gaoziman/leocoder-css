@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <title>font-face</title>
+  <style>
+    /*
+        font-face
+            - 通过它可以将远程字体提供给用户使用
+            - 注意：
+                - 使用的时候要慎重
+                    1. 下载字体需要花费时间，如果字体文件太大
+                        用户可能无法第一时间下载完成
+                    2. 使用字体可能会涉及的版权问题，小心律师函
+     */
+
+    @font-face {
+      /*src服务器中字体的路径*/
+      src: url("./font.ttf");
+      /*字体的名字，自定义*/
+      font-family: "test";
+    }
+
+    p{
+      font-size: 40px;
+      font-family: test,sans-serif;
+    }
+  </style>
+</head>
+<body>
+<p>今天天气真不错！</p>
+</body>
+</html>
