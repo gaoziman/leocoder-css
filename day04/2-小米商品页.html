@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>小米商品页</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        body{
+            background-color: #333;
+            font:14px / 1.5 Helvetica Neue, Helvetica, Arial, Microsoft Yahei, Hiragino Sans GB, Heiti SC, WenQuanYi Micro Hei, sans-serif;
+        }
+
+        a{
+            text-decoration: none;
+        }
+        .card {
+            width: 234px;
+            height: 300px;
+            padding: 20px 0;
+            background-color: #fff;
+            text-align: center;
+            box-sizing: border-box;
+
+        }
+
+        /*设置图片的容器*/
+        .img-wrapper{
+            width: 160px;
+            height: 160px;
+            margin: 0 auto;
+        }
+        .img-wrapper img{
+            vertical-align: top;
+            width: 100%;
+        }
+
+        .card h3 {
+            color: #333333;
+            font-size: 14px;
+            font-weight: normal;
+            margin-top: 20px;
+
+        }
+        .card .desc {
+            margin: 0 10px 10px;
+            color: #b0b0b0;
+            font-size: 12px;
+            /*    禁止文字的自动换行 white-space: nowrap */
+            white-space: nowrap;
+
+            /*    禁止文字的溢出*/
+            overflow: hidden;
+
+            /*    溢出文字显示为省略号*/
+            text-overflow: ellipsis;
+        }
+
+        .price span {
+            color: #ff6700;
+            font-size: 14px;
+        }
+        .price del {
+            color: #b0b0b0;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+<a href="#">
+    <div class="card">
+        <div class="img-wrapper">
+            <img src="imgs/202410281957_cef79555890f4b13bbe6939cb16692e0.webp"/>
+        </div>
+        <h3> Xiaomi Pad 7 Pro</h3>
+        <p class="desc"> 11.2英寸3.2K高清高刷屏 | 第三代骁龙8s 旗舰芯片 | HyperOS 2 </p>
+            <div class="price">
+                <span>2399元起</span>
+                <del>2499元</del>
+            </div>
+    </div>
+</a>
+
+</body>
+</html>
