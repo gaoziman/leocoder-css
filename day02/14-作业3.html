@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>商品展示卡片</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+
+        /* 容器样式 */
+        .container {
+            max-width: 240px;
+            margin: 0 auto;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        /* 商品卡片样式 */
+        .product-card {
+            background-color: #fff;
+            border: 1px solid #eaeaea;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        /* 商品图片样式 */
+        .product-image {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 15px;
+        }
+
+        /* 商品标题样式 */
+        .product-title {
+            font-size: 18px;
+            color: #333;
+            margin: 10px 0;
+        }
+
+        /* 商品描述样式 */
+        .product-description {
+            font-size: 14px;
+            color: #605e5e;
+            margin: 10px 0;
+        }
+
+        /* 价格区域样式 */
+        .product-price {
+            margin-top: 10px;
+            font-size: 16px;
+        }
+
+        .current-price {
+            font-size: 18px;
+            color: #FF8E56;
+            margin-right: 10px;
+        }
+
+        .original-price {
+            font-size: 14px;
+            color: #999;
+            /*text-decoration: line-through;*/
+        }
+    </style>
+    <!--  <link rel="stylesheet" href="styles.css">-->
+</head>
+<body>
+<div class="container">
+    <!-- 商品卡片 1 -->
+    <div class="product-card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSu0grf0PLtnNEmG925EViZZ03rs74HqXV6PfgJSs9sJLlLVUmXa4fDS6MGfWeAlmhKqKI&usqp=CAU" alt="小米笔记本Pro X 14" class="product-image">
+        <h3 class="product-title">小米笔记本Pro X 14</h3>
+        <p class="product-description">高能旗舰 轻盈力作</p>
+        <div class="product-price">
+            <span class="current-price">6999元</span>
+            <del class="original-price">7999元</del>
+        </div>
+    </div>
+
+    <!-- 商品卡片 2 -->
+    <div class="product-card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-Hg7c1Kvr2sMB1EQKiEIQb4wPnMjLVoU4hg&s" alt="小米平板5 Pro" class="product-image">
+        <h3 class="product-title">小米平板5 Pro</h3>
+        <p class="product-description">骁龙870芯片 | 2.5K超高清 | 120HZ高刷</p>
+        <div class="product-price">
+            <span class="current-price">2199元起</span>
+            <del class="original-price">2499元</del>
+        </div>
+    </div>
+</div>
+</body>
+</html>
